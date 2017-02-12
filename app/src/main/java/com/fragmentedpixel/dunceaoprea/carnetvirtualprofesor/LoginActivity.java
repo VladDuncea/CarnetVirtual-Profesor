@@ -48,7 +48,6 @@ public class LoginActivity extends Activity
     private EditText mPasswordView;
     private String mEmail;
     private String mPassword;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
