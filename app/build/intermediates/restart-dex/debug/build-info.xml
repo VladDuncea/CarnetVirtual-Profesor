@@ -5,32 +5,32 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="169838417601249"
-    token="9087543128421569276"
+    timestamp="1557944794485951"
+    token="-7884741472932783606"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="302" />
+        duration="628" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="337" />
+        duration="319" />
     <task
         name="verifier"
-        duration="97" />
+        duration="123" />
 
     <artifact
-        location="D:\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
+        location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="169838417601249"
+        timestamp="1557944794485951"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
+            location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

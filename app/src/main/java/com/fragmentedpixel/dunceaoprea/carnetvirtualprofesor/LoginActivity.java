@@ -105,7 +105,7 @@ public class LoginActivity extends Activity
         mPassword = mPasswordView.getText().toString();
 
         //TODO: DUNCEA PLS CHANGE THIS
-        //Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
+        Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
         TeacherStuff();
         Intent intent = new Intent(this, MainActivity.class);
 

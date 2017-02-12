@@ -1,7 +1,7 @@
-#Sun Feb 12 19:12:41 EET 2017
-base.0=D\:\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_05707636051835a566273db09482abce7da28803
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_adc422700c88442a42abc88dd6e267886261e2c3\\classes.dex
-base.1=D\:\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_adc422700c88442a42abc88dd6e267886261e2c3
-file.0=D\:\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_05707636051835a566273db09482abce7da28803\\classes.dex
+#Sun Feb 12 23:58:46 EET 2017
+base.0=D\:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_42ba9992ea435025bce9c4647e9e1e4150521e66
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_64b28640e9cf809e048e3c4bfe9a35cf73bf9cf3\\classes.dex
+base.1=D\:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_64b28640e9cf809e048e3c4bfe9a35cf73bf9cf3
+file.0=D\:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_42ba9992ea435025bce9c4647e9e1e4150521e66\\classes.dex
