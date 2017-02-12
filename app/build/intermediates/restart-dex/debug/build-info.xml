@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="24"
-    density="xxhdpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1557944794485951"
+    timestamp="1559453510326892"
     token="-7884741472932783606"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="628" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="319" />
+        duration="0" />
     <task
         name="verifier"
-        duration="123" />
+        duration="0" />
 
     <artifact
         location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1557944794485951"
+        timestamp="1559453510326892"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
