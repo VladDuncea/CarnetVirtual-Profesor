@@ -16,7 +16,5 @@ public class Student {
         this.stName = stName;
         this.stForname = stForname;
         this.stID = stID;
-
-        Teacher.students.add(this);
     }
 }

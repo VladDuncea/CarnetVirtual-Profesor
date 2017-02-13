@@ -27,9 +27,9 @@ public class PresencesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_presences);
 
         TextView classText = (TextView) findViewById(R.id.class_text);
-        classText.setText(Teacher.teacher.selectedClass);
+        classText.setText(Teacher.teacher.selectedClass.CName);
 
-        for(Student s : Teacher.students)
+        for(Student s : Teacher.teacher.selectedClass.students)
             studentsName.add(s.stName + " " + s.stForname);
 
         PopulateList();
@@ -40,7 +40,7 @@ public class PresencesActivity extends AppCompatActivity {
             {
                 studentsName.remove(position);
                 PopulateList();
-                Presence(Teacher.students.get(position).stID);
+                Presence(Teacher.teacher.selectedClass.students.get(position).stID);
             }
         });
     }

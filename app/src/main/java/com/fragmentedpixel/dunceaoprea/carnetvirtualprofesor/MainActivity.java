@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.awt.font.TextAttribute;
@@ -74,7 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<String> arraySpinner = new ArrayList<>();
 
-        final ArrayList<String> classesList = Teacher.teacher.classes;
+        ArrayList<String> classesList = new ArrayList<>();
+
+        for(Classes c : Teacher.teacher.classes)
+            classesList.add(c.CName);
 
         for (String c : classesList)
                 arraySpinner.add(c);
@@ -86,15 +90,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
         {
-            Teacher.teacher.selectedClass = classesSpinner.getSelectedItem().toString();
-            Teacher.ResetStudentsList();
-            //TODO: Add new Student
-            new Student("Ion", "Vasile" , 5);
-            new Student("Ion", "Genila" , 6);
-            new Student("Ion", "Trenila" , 7);
-            new Student("Ion", "Benzina" , 9);
-            new Student("Ion", "Hijina" , 11);
-            new Student("Vasile", "Ion" , 50);
+            String selectedClassName = classesSpinner.getSelectedItem().toString();
+            for(Classes c : Teacher.teacher.classes)
+                if(c.CName.equals(selectedClassName))
+                    Teacher.teacher.selectedClass = c;
+
         }
 
         @Override
