@@ -114,12 +114,7 @@ public class LoginActivity extends Activity
 
     private void TeacherStuff()
     {
-        ArrayList<String> clase = new ArrayList<>();
-        clase.add("8D");
-        clase.add("10D");
-        clase.add("11F");
-
-        //new Teacher(clase);
+        Toast.makeText(LoginActivity.this, "Logging in", Toast.LENGTH_SHORT).show();
     }
 }
 
