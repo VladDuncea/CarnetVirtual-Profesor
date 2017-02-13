@@ -39,7 +39,7 @@ public class GradesActivity extends AppCompatActivity {
     private void SetUp()
     {
         TextView header = (TextView) findViewById(R.id.classHeader_textView);
-        header.setText(Teacher.teacher.selectedClass);
+        header.setText(Teacher.teacher.selectedClass.CName);
 
         TextView date = (TextView) findViewById(R.id.date_textView);
 
@@ -51,7 +51,7 @@ public class GradesActivity extends AppCompatActivity {
     {
         ArrayList<String> students = new ArrayList<>();
 
-        for(Student s: Teacher.students)
+        for(Student s: Teacher.teacher.selectedClass.students)
             students.add(s.stName + " " + s.stForname);
 
         Spinner studentsSpinner = (Spinner) findViewById(R.id.students_Spinner);
@@ -67,8 +67,8 @@ public class GradesActivity extends AppCompatActivity {
         int index = studentsSpinner.getSelectedItemPosition();
 
         /* Informatii utile*/
-        String result = Teacher.students.get(index).stName + " " + Teacher.students.get(index).stForname;
-        int STID = Teacher.students.get(index).stID;
+        String result = Teacher.teacher.selectedClass.students.get(index).stName + " " + Teacher.teacher.selectedClass.students.get(index).stForname;
+        int STID = Teacher.teacher.selectedClass.students.get(index).stID;
         Boolean eTeza = ((CheckBox) findViewById(R.id.teza_checkBox)).isChecked();
         Date dateNow =  Calendar.getInstance().getTime();
         String nota = ((EditText) findViewById(R.id.nota_editText)).getText().toString();
