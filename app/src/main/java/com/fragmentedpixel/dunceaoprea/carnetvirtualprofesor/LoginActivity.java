@@ -86,13 +86,9 @@ public class LoginActivity extends Activity
             @Override
             public void run()
             {
-                try {
                     LogIn();
-                    Thread.sleep(5000);
                     progressDialog.dismiss();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
             }
         }).start();
     }
@@ -106,15 +102,9 @@ public class LoginActivity extends Activity
 
         //TODO: DUNCEA PLS CHANGE THIS
         Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
-        TeacherStuff();
         Intent intent = new Intent(this, MainActivity.class);
 
         startActivity(intent);
-    }
-
-    private void TeacherStuff()
-    {
-        Toast.makeText(LoginActivity.this, "Logging in", Toast.LENGTH_SHORT).show();
     }
 }
 
