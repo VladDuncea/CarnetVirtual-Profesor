@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
@@ -64,16 +64,16 @@
         "source": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_vector_test.xml"
+        "merged": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "D:\\Androidprojects\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
