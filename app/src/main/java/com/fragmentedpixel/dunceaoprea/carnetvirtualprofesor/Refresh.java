@@ -9,6 +9,7 @@ import android.util.Base64;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
@@ -18,6 +19,7 @@ import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -55,68 +57,34 @@ public class Refresh {
                         }
                         else
                         {
-                            context.startActivity(new Intent(context, MainActivity.class));
-
-
-                            /*
-                            String SName = jsonResponse.getString("SName");
-                            String SAddress = jsonResponse.getString("SAddress");
-                            String SPhone = jsonResponse.getString("SPhone");
-                            String CName = jsonResponse.getString("CName");
-                            String STName = jsonResponse.getString("STName");
-                            String STFirstName = jsonResponse.getString("STFirstName");
-                            String STSerialNr = jsonResponse.getString("STSerialNr");
-                            String STAddress = jsonResponse.getString("STAddress");
-                            String STPhone = jsonResponse.getString("STPhone");
-                            Integer Grade_nr = jsonResponse.getInt("Grade_nr");
-                            Integer Presence_nr = jsonResponse.getInt("Presence_nr");
-                            Integer Chat_nr = jsonResponse.getInt("Chat_nr");
-
-
-
+                            Integer NRClasses = jsonResponse.getInt("NRClasses");
+                            String TName = jsonResponse.getString("TName");
+                            String TFirstName = jsonResponse.getString("TFirstName");
+                            Boolean TIsMaster = jsonResponse.getBoolean("TIsMaster");
 
                             //new Student(SName,SAddress,SPhone,CName,STName,STFirstName,STPicture_bm,Email,Password, BSignature_bm,STSerialNr,STAddress,STPhone);
                             //Serialization.saveSerializable(context);
                             //context.startActivity(new Intent(context, Main.class));
-
-                            for(int i=0;i<Presence_nr;i++)
+                            //ArrayList<>
+                            for(int i=0;i<NRClasses;i++)
                             {
-                                JSONObject presence = jsonResponse.getJSONObject("Presence"+i);
-                                String PDate = presence.getString("PDate");
-                                DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.ENGLISH);
-                                Date date = format.parse(PDate);
-                                Boolean PValue = presence.getBoolean("PValue");
-                                String SBName = presence.getString("SBName");
+                                JSONObject Classes = jsonResponse.getJSONObject("Classes"+i);
+                                String CName = Classes.getString("CName");
+                                Integer CValue = Classes.getInt("CValue");
+                                String SBName = Classes.getString("SBName");
+                                Boolean CMaster = Classes.getBoolean("CMaster");
+                                for(int j=0;i<NRClasses;j++)
+                                {
+                                    JSONObject Student = Classes.getJSONObject("Student"+j);
+                                    Integer STID = Student.getInt("STID");
+                                    String STName = Student.getString("STName");
+                                    String STFirstName = Student.getString("STFistName");
+                                }
 
-                                new Presences(date,PValue,SBName);
                             }
+                            new Teacher(TName,TFirstName,TIsMaster,null);
+                            context.startActivity(new Intent(context, MainActivity.class));
 
-                            for(int i=0;i<Grade_nr;i++)
-                            {
-                                JSONObject grade = jsonResponse.getJSONObject("Grade"+i);
-                                String GDate = grade.getString("GDate");
-                                DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.ENGLISH);
-                                Date date = format.parse(GDate);
-                                Integer GValue = grade.getInt("GValue");
-                                String SBName = grade.getString("SBName");
-                                new Grades(date,GValue,SBName);
-                            }
-
-                            for(int i=0;i<Chat_nr;i++)
-                            {
-                                JSONObject chat = jsonResponse.getJSONObject("Chat"+i);
-
-                                DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.ENGLISH);
-                                String CHDate = chat.getString("CHDate");
-                                String CHEDate = chat.getString("CHEDate");
-                                Date chdate = format.parse(CHDate);
-                                Date chedate = format.parse(CHEDate);
-                                Integer CHType = chat.getInt("CHType");
-                                String CHMessage = chat.getString("CHMessage");
-                                String TName = chat.getString("TName");
-                                new ChatMessage(chdate,chedate,CHMessage,TName,CHType);
-                            }
-                            */
                         }
                     }
                     else{

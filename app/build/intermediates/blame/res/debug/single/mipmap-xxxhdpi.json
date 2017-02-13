@@ -2,5 +2,9 @@
     {
         "merged": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "D:\\Downloads\\CarnetVirtual-Profesor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Necula\\CarnetVirtual-Profesor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Necula\\CarnetVirtual-Profesor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]
