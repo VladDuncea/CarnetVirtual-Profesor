@@ -16,6 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -70,12 +71,20 @@ public class Refresh {
                             {
                                 JSONObject Classes = jsonResponse.getJSONObject("Classes"+i);
                                 Integer NRStudents = Classes.getInt("NRStudents");
+                                Integer NRSubjects = Classes.getInt("NRSubjects");
                                 String CName = Classes.getString("CName");
                                 Integer CID = Classes.getInt("CID");
                                 Integer CValue = Classes.getInt("CValue");
-                                String SBName = Classes.getString("SBName");
                                 Boolean CMaster = Classes.getBoolean("CMaster");
                                 ArrayList<Student> teacherStudent = new ArrayList<>();
+                                ArrayList<String> classesSubject = new ArrayList<>();
+
+                                for(int j=0;j<NRSubjects;j++)
+                                {
+                                    JSONObject SB = Classes.getJSONObject("SB"+j);
+                                    classesSubject.add(j,SB.getString("SBName"));
+                                }
+
                                 for(int j=0;j<NRStudents;j++)
                                 {
                                     JSONObject Student = Classes.getJSONObject("Student"+j);
@@ -85,7 +94,7 @@ public class Refresh {
                                     teacherStudent.add(new Student(STName,STFirstName,STID));
                                 }
 
-                                teacherClasses.add(new Classes(CID,CName,teacherStudent));
+                                teacherClasses.add(new Classes(CID,CValue,CName,classesSubject,teacherStudent));
                             }
                             new Teacher(TName,TFirstName,TIsMaster,teacherClasses);
 

@@ -1,5 +1,6 @@
 package com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor;
 
+import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 
 /**
@@ -8,13 +9,19 @@ import java.util.ArrayList;
 
 public class Classes {
     public Integer CID;
+    public Integer CValue;
     public String CName;
+    public ArrayList<String> subjects;
     public ArrayList<Student> students;
 
-    public Classes (Integer CID,String CName, ArrayList<Student> students)
+    public String selsubject;
+
+    public Classes (Integer CID,Integer CValue,String CName,ArrayList<String> subjects, ArrayList<Student> students)
     {
         this.CID = CID;
+        this.CValue = CValue;
         this.CName = CName;
+        this.subjects = subjects;
         this.students = students;
     }
 }
