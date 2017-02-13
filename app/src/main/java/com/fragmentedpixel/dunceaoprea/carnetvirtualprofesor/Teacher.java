@@ -12,13 +12,15 @@ public class Teacher
     public ArrayList<Classes> classes = new ArrayList<>();
 
     public Classes selectedClass;
+    public String TID;
     public String Name;
     public String FirstName;
     public Boolean IsMaster;
 
-    public Teacher(String Name,String FirstName,Boolean IsMaster,ArrayList<Classes> classes)
+    public Teacher(String TID,String Name,String FirstName,Boolean IsMaster,ArrayList<Classes> classes)
     {
         this.classes = classes;
+        this.TID = TID;
         this.Name = Name;
         this.FirstName = FirstName;
         this.IsMaster = IsMaster;

@@ -38,6 +38,8 @@ public class MessageActivity extends AppCompatActivity {
         });
     }
 
+    // TODO Oprea: Adauga un expire date la mesaj si tipul mesajului(1-simplu,2-test,3-teza)
+
     private void SendMessage()
     {
         EditText editTextMessage = (EditText) findViewById(R.id.messge_editText);
@@ -68,7 +70,11 @@ public class MessageActivity extends AppCompatActivity {
 
             }
         };
-        _Chat_Upload chat_Request = new _Chat_Upload(message,null,responseListener);
+        String CID = Teacher.teacher.selectedClass.CID.toString();
+        String TID = Teacher.teacher.TID;
+        String Name = Teacher.teacher.Name;
+
+        _Chat_Upload chat_Request = new _Chat_Upload(message,CID,TID,Name,null,null,responseListener);
         RequestQueue chat_Queue = Volley.newRequestQueue(MessageActivity.this);
         chat_Queue.add(chat_Request);
 

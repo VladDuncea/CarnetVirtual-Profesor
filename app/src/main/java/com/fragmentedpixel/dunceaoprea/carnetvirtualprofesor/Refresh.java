@@ -59,6 +59,7 @@ public class Refresh {
                         else
                         {
                             Integer NRClasses = jsonResponse.getInt("NRClasses");
+                            String TID = jsonResponse.getString("TID");
                             String TName = jsonResponse.getString("TName");
                             String TFirstName = jsonResponse.getString("TFirstName");
                             Boolean TIsMaster = jsonResponse.getBoolean("TIsMaster");
@@ -96,7 +97,7 @@ public class Refresh {
 
                                 teacherClasses.add(new Classes(CID,CValue,CName,classesSubject,teacherStudent));
                             }
-                            new Teacher(TName,TFirstName,TIsMaster,teacherClasses);
+                            new Teacher(TID,TName,TFirstName,TIsMaster,teacherClasses);
 
                             context.startActivity(new Intent(context, MainActivity.class));
 
