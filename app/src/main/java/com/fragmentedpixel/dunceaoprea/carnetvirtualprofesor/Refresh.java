@@ -65,24 +65,29 @@ public class Refresh {
                             //new Student(SName,SAddress,SPhone,CName,STName,STFirstName,STPicture_bm,Email,Password, BSignature_bm,STSerialNr,STAddress,STPhone);
                             //Serialization.saveSerializable(context);
                             //context.startActivity(new Intent(context, Main.class));
-                            //ArrayList<>
+                            ArrayList<Classes> teacherClasses = new ArrayList<>();
                             for(int i=0;i<NRClasses;i++)
                             {
                                 JSONObject Classes = jsonResponse.getJSONObject("Classes"+i);
                                 String CName = Classes.getString("CName");
+                                Integer CID = Classes.getInt("CID");
                                 Integer CValue = Classes.getInt("CValue");
                                 String SBName = Classes.getString("SBName");
                                 Boolean CMaster = Classes.getBoolean("CMaster");
+                                ArrayList<Student> teacherStudent = new ArrayList<>();
                                 for(int j=0;i<NRClasses;j++)
                                 {
                                     JSONObject Student = Classes.getJSONObject("Student"+j);
                                     Integer STID = Student.getInt("STID");
-                                    String STName = Student.getString("STName");
-                                    String STFirstName = Student.getString("STFistName");
+                                    String  STName = Student.getString("STName");
+                                    String  STFirstName = Student.getString("STFistName");
+                                    teacherStudent.add(new Student(STName,STFirstName,STID));
                                 }
 
+                                teacherClasses.add(new Classes(CID,CName,teacherStudent));
                             }
-                            new Teacher(TName,TFirstName,TIsMaster,null);
+                            new Teacher(TName,TFirstName,TIsMaster,teacherClasses);
+
                             context.startActivity(new Intent(context, MainActivity.class));
 
                         }

@@ -119,7 +119,7 @@ public class LoginActivity extends Activity
         clase.add("10D");
         clase.add("11F");
 
-        new Teacher(clase);
+        //new Teacher(clase);
     }
 }
 

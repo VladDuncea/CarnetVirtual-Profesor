@@ -9,15 +9,14 @@ import java.util.ArrayList;
 public class Teacher
 {
     public static Teacher teacher;
-    public static ArrayList<Student> students = new ArrayList<>();
+    public ArrayList<Classes> classes = new ArrayList<>();
 
-    public ArrayList<String> classes;
-    public String selectedClass;
+    public Classes selectedClass;
     public String Name;
     public String FirstName;
     public Boolean IsMaster;
 
-    public Teacher(String Name,String FirstName,Boolean IsMaster,ArrayList<String> classes)
+    public Teacher(String Name,String FirstName,Boolean IsMaster,ArrayList<Classes> classes)
     {
         this.classes = classes;
         this.Name = Name;
@@ -26,9 +25,5 @@ public class Teacher
         teacher = this;
     }
 
-    public static void ResetStudentsList()
-    {
-        students = new ArrayList<>();
-    }
 
 }
