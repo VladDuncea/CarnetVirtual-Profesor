@@ -69,13 +69,14 @@ public class Refresh {
                             for(int i=0;i<NRClasses;i++)
                             {
                                 JSONObject Classes = jsonResponse.getJSONObject("Classes"+i);
+                                Integer NRStudents = Classes.getInt("NRStudents");
                                 String CName = Classes.getString("CName");
                                 Integer CID = Classes.getInt("CID");
                                 Integer CValue = Classes.getInt("CValue");
                                 String SBName = Classes.getString("SBName");
                                 Boolean CMaster = Classes.getBoolean("CMaster");
                                 ArrayList<Student> teacherStudent = new ArrayList<>();
-                                for(int j=0;j<NRClasses;j++)
+                                for(int j=0;j<NRStudents;j++)
                                 {
                                     JSONObject Student = Classes.getJSONObject("Student"+j);
                                     Integer STID = Student.getInt("STID");
