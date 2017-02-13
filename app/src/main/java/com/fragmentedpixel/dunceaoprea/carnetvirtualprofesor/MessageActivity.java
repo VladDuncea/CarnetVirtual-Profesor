@@ -26,7 +26,7 @@ public class MessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message);
 
         TextView header = (TextView) findViewById(R.id.message_header_textView);
-        header.setText("Mesaj catre " + Teacher.teacher.selectedClass);
+        header.setText("Mesaj catre " + Teacher.teacher.selectedClass.CName);
 
         Button sendButton = (Button) findViewById(R.id.message_send_button);
         sendButton.setOnClickListener(new View.OnClickListener() {
