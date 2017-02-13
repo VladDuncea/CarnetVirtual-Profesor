@@ -70,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void PopulateList()
     {
+        for (Classes c:Teacher.teacher.classes)
+        {
+            Toast.makeText(this, c.CName+" "+c.students.get(0).stName, Toast.LENGTH_SHORT).show();
+        }
+
 
         final Spinner classesSpinner = (Spinner) findViewById(R.id.classes_spinner);
 

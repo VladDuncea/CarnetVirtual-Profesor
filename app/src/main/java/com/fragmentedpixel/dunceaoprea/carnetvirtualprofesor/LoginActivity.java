@@ -102,9 +102,6 @@ public class LoginActivity extends Activity
 
         //TODO: DUNCEA PLS CHANGE THIS
         Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
-        Intent intent = new Intent(this, MainActivity.class);
-
-        startActivity(intent);
     }
 }
 

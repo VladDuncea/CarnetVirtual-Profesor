@@ -5,33 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="38835232014251"
-    token="9087543128421569276"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1636673987031486"
+    token="-7884741472932783606"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2242" />
+        duration="300" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="776" />
+        duration="35" />
     <task
         name="verifier"
-        duration="223" />
+        duration="3" />
 
     <artifact
-        location="D:\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="38835232014251"
+        timestamp="1635329163153164"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
+            location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="1636673987031486"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

@@ -75,12 +75,12 @@ public class Refresh {
                                 String SBName = Classes.getString("SBName");
                                 Boolean CMaster = Classes.getBoolean("CMaster");
                                 ArrayList<Student> teacherStudent = new ArrayList<>();
-                                for(int j=0;i<NRClasses;j++)
+                                for(int j=0;j<NRClasses;j++)
                                 {
                                     JSONObject Student = Classes.getJSONObject("Student"+j);
                                     Integer STID = Student.getInt("STID");
                                     String  STName = Student.getString("STName");
-                                    String  STFirstName = Student.getString("STFistName");
+                                    String  STFirstName = Student.getString("STFirstName");
                                     teacherStudent.add(new Student(STName,STFirstName,STID));
                                 }
 
