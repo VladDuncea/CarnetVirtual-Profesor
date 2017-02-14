@@ -1,12 +1,15 @@
 package com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor;
 
-import android.content.Intent;
+import android.app.DatePickerDialog;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +20,15 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class MessageActivity extends AppCompatActivity {
+
+
+    private EditText edittext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,6 +47,63 @@ public class MessageActivity extends AppCompatActivity {
                 SendMessage();
             }
         });
+
+        SpinnerSetUp();
+        edittext = (EditText) findViewById(R.id.date_editText);
+        SetEditText();
+    }
+
+    Calendar myCalendar = Calendar.getInstance();
+
+    DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+        @Override
+        public void onDateSet(DatePicker view, int year, int monthOfYear,
+                              int dayOfMonth) {
+            // TODO Auto-generated method stub
+            myCalendar.set(Calendar.YEAR, year);
+            myCalendar.set(Calendar.MONTH, monthOfYear);
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+            updateLabel();
+        }
+
+    };
+
+    private void SetEditText()
+    {
+
+        edittext.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(MessageActivity.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+    }
+
+    private void updateLabel() {
+
+        String myFormat = "MM/dd/yy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.getDefault());
+
+        edittext.setText(sdf.format(myCalendar.getTime()));
+    }
+
+
+    private void SpinnerSetUp()
+    {
+        Spinner messageTypeSpinner = (Spinner) findViewById(R.id.messageType_spinner);
+
+        ArrayList<String> options = new ArrayList<>();
+        options.add("Mesaj simplu");
+        options.add("Test");
+        options.add("Teza");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, options);
+        messageTypeSpinner.setAdapter(adapter);
     }
 
     // TODO Oprea: Adauga un expire date la mesaj si tipul mesajului(1-simplu,2-test,3-teza)

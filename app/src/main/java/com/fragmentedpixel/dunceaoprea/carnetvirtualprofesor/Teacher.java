@@ -24,6 +24,8 @@ public class Teacher
         this.Name = Name;
         this.FirstName = FirstName;
         this.IsMaster = IsMaster;
+
+        this.selectedClass = classes.get(0);
         teacher = this;
     }
 

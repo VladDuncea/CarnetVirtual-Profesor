@@ -3,147 +3,147 @@
 
     <item
         is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_4f580c16e239b0edf1e5af207659c0264ec83939\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_e309efdaffddb8da617ec9b3b765e22283c2f740\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_7a7856a43aed90a6e779c05c6f3f0c43209b00e1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_82df0a45686bf47650bb5fd0ca27f7d9ebb7f4ad\classes.dex" />
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_0ebae95e7cd9c9520be3d55598fa5bfa055faf32\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_d6e85f3f36aefab6d590d8e202dd2744b3f31636\classes.dex" />
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_15076a95cbd84db3644a775c3e64e1b296444c00\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\vlad_\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_8fb01be201e53a5e62fdefc78f34662f560d66e4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_c5bc9dc6acce59a84b4b52e26ee99a00c657931b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_49703a99540684712abc9bb69a43181305876862\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_2a2f84d1c322be55be48b6054f1b51bfdbab7992\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_464c8f11e7109a6b1b15e9882cae81c68fd5814b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_f0e67b8ee58c9312c7a29976a9a646f410449b63\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_c01bb9cbeb322bc9460b1fc5b010cd0505e1a3a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bd40853b749dbad287b5dd081a3b59856dc9a108">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_42ba9992ea435025bce9c4647e9e1e4150521e66\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8156c713237d87096c9b9c7964f4fe36ba88b097">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_64b28640e9cf809e048e3c4bfe9a35cf73bf9cf3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_d47e909669dfa997b710666fac6cdbf2ab7644c4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_19763365b27c033ef49bba782a921026a931bd98\classes.dex" />
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_e5116c3a9e69f453e5d202f3fa077ad21c1a83da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\oalex\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9d20c4228b61c6252263a555334ea4eaa2b945ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7462750fe4272670f227896d1468eda6f4d126d">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_adc422700c88442a42abc88dd6e267886261e2c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_44d6536ed8303af85a422488ef083ee09962fd3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_b0019f7ad0592177286f1b69bb42cbc993c62e69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_a6f7e3dbbff6c558b4777e20062396f1938f4d8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_d5744d01caab75f13d33b531bb53d3224fb9cefb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_8d8d2033e46fe590b8155bdb99cdac2ee5be4abf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_05e8337f7546310f50da619276deb00090d10d15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_496ae81452f897a5add24742f4f0f45f49919e3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_a795eeee9871842cd25804ae94f4f01744dc80fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de89580bd68db13d3cdae02235eb618af7a627d6">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_05707636051835a566273db09482abce7da28803\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_c5d547d3f44750396260a186d5ac218c688a1f09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\CarnetVirtual-Profesor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_00438855adb959ae1f6448d506d1755b5541d8c9\classes.dex" />
     </item>
 
 </items>
