@@ -1,4 +1,4 @@
-#Mon Feb 13 21:28:44 EET 2017
+#Tue Feb 14 20:51:44 EET 2017
 base.0=D\:\\Downloads\\CarnetVirtual-Profesor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_42ba9992ea435025bce9c4647e9e1e4150521e66
 renamed.1=classes2.dex
 renamed.0=classes.dex

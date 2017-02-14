@@ -62,7 +62,7 @@ public class MessageActivity extends AppCompatActivity {
                     }
                     else{
                         AlertDialog.Builder alert = new AlertDialog.Builder(MessageActivity.this);
-                        alert.setMessage("Ups.. S-a intamplat ceva neprevazut").setNegativeButton("Inapoi",null).create().show();
+                        alert.setMessage("Eroare").setNegativeButton("Inapoi",null).create().show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -74,16 +74,10 @@ public class MessageActivity extends AppCompatActivity {
         String TID = Teacher.teacher.TID;
         String Name = Teacher.teacher.Name;
 
-        _Chat_Upload chat_Request = new _Chat_Upload(message,CID,TID,Name,null,null,responseListener);
+        _Chat_Upload chat_Request = new _Chat_Upload(message,CID,TID,Name,"1","1",responseListener);
         RequestQueue chat_Queue = Volley.newRequestQueue(MessageActivity.this);
         chat_Queue.add(chat_Request);
 
 
-
-
-
-
-
-        Toast.makeText(MessageActivity.this, "Mesajul: " + message + " catre clasa " + Teacher.teacher.selectedClass, Toast.LENGTH_LONG).show();
     }
 }

@@ -5,47 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1639889077491306"
+    timestamp="1720084216471517"
     token="-7884741472932783606"
-    verifier="COMPATIBLE" >
+    verifier="FIELD_TYPE_CHANGE" >
 
     <task
         name="javac"
-        duration="328" />
+        duration="390" />
     <task
         name="instant-run-dex"
-        duration="11" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="35" />
+        duration="12" />
     <task
         name="verifier"
         duration="4" />
 
     <artifact
-        location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="1635329163153164"
+        timestamp="1719504082949994"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Downloads\CarnetVirtual-Profesor\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1639773331684511"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1720084216471517"
+        verifier="FIELD_TYPE_CHANGE" >
         <artifact
             location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />
-    </build>
-    <build
-        timestamp="1639889077491306"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
