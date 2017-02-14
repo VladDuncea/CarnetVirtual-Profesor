@@ -99,8 +99,6 @@ public class PresencesActivity extends AppCompatActivity {
         _Presence_Upload presence_Request = new _Presence_Upload(STID.toString(),CValue,TID,SBName,df.format(date),responseListener);
         RequestQueue presence_Queue = Volley.newRequestQueue(PresencesActivity.this);
         presence_Queue.add(presence_Request);
-
-        Toast.makeText(PresencesActivity.this, "Absenta la index: " + STID + " la data: " + df.format(date), Toast.LENGTH_LONG).show();
     }
 }
 
