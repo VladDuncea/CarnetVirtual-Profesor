@@ -1,6 +1,7 @@
 package com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor;
 
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,6 +11,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -61,20 +69,51 @@ public class GradesActivity extends AppCompatActivity {
 
     private void Submit()
     {
-        //TODO: pls add some request to the server. P.S: be polite with the server he might get angry
-
         Spinner studentsSpinner = (Spinner) findViewById(R.id.students_Spinner);
         int index = studentsSpinner.getSelectedItemPosition();
 
         /* Informatii utile*/
         String result = Teacher.teacher.selectedClass.students.get(index).stName + " " + Teacher.teacher.selectedClass.students.get(index).stForname;
-        int STID = Teacher.teacher.selectedClass.students.get(index).stID;
+        Integer STID = Teacher.teacher.selectedClass.students.get(index).stID;
         Boolean eTeza = ((CheckBox) findViewById(R.id.teza_checkBox)).isChecked();
         Date dateNow =  Calendar.getInstance().getTime();
         String nota = ((EditText) findViewById(R.id.nota_editText)).getText().toString();
 
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+                    if(!jsonResponse.getBoolean("success"))
+                    {
+                        AlertDialog.Builder alert = new AlertDialog.Builder(GradesActivity.this);
+                        alert.setMessage("Maintenance").setNegativeButton("Inapoi",null).create().show();
+                    }
+                    boolean success = jsonResponse.getBoolean("success");
+                    if(success){
+
+                        Toast.makeText(GradesActivity.this,"Succes",Toast.LENGTH_LONG).show();
+
+                    }
+                    else{
+                        AlertDialog.Builder alert = new AlertDialog.Builder(GradesActivity.this);
+                        alert.setMessage("Eroare").setNegativeButton("Inapoi",null).create().show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        String TID = Teacher.teacher.TID;
+        String SBName = Teacher.teacher.selectedClass.subjects.get(0);
+        SimpleDateFormat df = new SimpleDateFormat("YYYY/MM/dd HH:mm", Locale.getDefault());
+
+        _Grade_Upload grade_Request = new _Grade_Upload(STID.toString(),nota,TID,SBName,df.format(dateNow),eTeza.toString(),responseListener);
+        RequestQueue grade_Queue = Volley.newRequestQueue(GradesActivity.this);
+        grade_Queue.add(grade_Request);
+
         //Output
-        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YY", Locale.getDefault());
         result += " " + df.format(dateNow) + " " + nota;
         Toast.makeText(GradesActivity.this, result, Toast.LENGTH_LONG).show();
     }

@@ -2709,7 +2709,7 @@ containing a value of this type.
         public static final int contentPanel=0x7f0d004e;
         public static final int custom=0x7f0d0055;
         public static final int customPanel=0x7f0d0054;
-        public static final int date_editText=0x7f0d008b;
+        public static final int date_editText=0x7f0d008a;
         public static final int date_textView=0x7f0d0078;
         public static final int decor_content_parent=0x7f0d0062;
         public static final int default_activity_button=0x7f0d0047;
@@ -2757,7 +2757,7 @@ containing a value of this type.
         public static final int messageType_spinner=0x7f0d0089;
         public static final int message_header_textView=0x7f0d0087;
         public static final int message_send_button=0x7f0d0088;
-        public static final int messge_editText=0x7f0d008a;
+        public static final int messge_editText=0x7f0d008b;
         public static final int middle=0x7f0d0039;
         public static final int mini=0x7f0d0037;
         public static final int multiply=0x7f0d001f;
