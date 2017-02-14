@@ -31,12 +31,12 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:text="Chat"
+        android:text="Catalog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/chat_button"
+        android:id="@+id/catalog_button"
         android:elevation="0dp"
         tools:ignore="HardcodedText,UnusedAttribute" />
 

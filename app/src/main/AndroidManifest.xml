@@ -30,7 +30,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PresencesActivity" />
         <activity android:name=".GradesActivity" />
-        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".CatalogActivity"></activity>
     </application>
 
 </manifest>

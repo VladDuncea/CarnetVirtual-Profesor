@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void LinkButtons()
     {
-        Button chatButton = (Button) findViewById(R.id.chat_button);
+        Button chatButton = (Button) findViewById(R.id.catalog_button);
         Button gradeButton = (Button) findViewById(R.id.grades_button);
         Button presenceButton = (Button) findViewById(R.id.presences_button);
         Button messageButton = (Button) findViewById(R.id.write_message_button);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         chatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity.this, CatalogActivity.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         final Spinner classesSpinner = (Spinner) findViewById(R.id.classes_spinner);
 
         ArrayList<String> arraySpinner = new ArrayList<>();
-
         ArrayList<String> classesList = new ArrayList<>();
 
         for(Classes c : Teacher.teacher.classes)

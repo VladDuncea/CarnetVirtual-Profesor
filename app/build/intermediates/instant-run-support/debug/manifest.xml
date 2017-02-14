@@ -38,6 +38,7 @@
         <activity android:name="com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor.PresencesActivity" />
         <activity android:name="com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor.GradesActivity" />
         <activity android:name="com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor.MessageActivity" />
+        <activity android:name="com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor.CatalogActivity" />
     </application>
 
 </manifest>
