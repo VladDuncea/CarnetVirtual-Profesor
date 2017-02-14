@@ -72,7 +72,7 @@ public class GradesActivity extends AppCompatActivity {
         Spinner studentsSpinner = (Spinner) findViewById(R.id.students_Spinner);
         int index = studentsSpinner.getSelectedItemPosition();
 
-        /* Informatii utile*/
+        /* Informatii utile*/    //TODO Note sub 11 si peste 0
         String result = Teacher.teacher.selectedClass.students.get(index).stName + " " + Teacher.teacher.selectedClass.students.get(index).stForname;
         Integer STID = Teacher.teacher.selectedClass.students.get(index).stID;
         Boolean eTeza = ((CheckBox) findViewById(R.id.teza_checkBox)).isChecked();
@@ -106,15 +106,12 @@ public class GradesActivity extends AppCompatActivity {
             }
         };
         String TID = Teacher.teacher.TID;
+        String CValue = Teacher.teacher.selectedClass.CValue.toString();
         String SBName = Teacher.teacher.selectedClass.subjects.get(0);
         SimpleDateFormat df = new SimpleDateFormat("YYYY/MM/dd HH:mm", Locale.getDefault());
 
-        _Grade_Upload grade_Request = new _Grade_Upload(STID.toString(),nota,TID,SBName,df.format(dateNow),eTeza.toString(),responseListener);
+        _Grade_Upload grade_Request = new _Grade_Upload(STID.toString(),nota,TID,SBName,df.format(dateNow),CValue,eTeza.toString(),responseListener);
         RequestQueue grade_Queue = Volley.newRequestQueue(GradesActivity.this);
         grade_Queue.add(grade_Request);
-
-        //Output
-        result += " " + df.format(dateNow) + " " + nota;
-        Toast.makeText(GradesActivity.this, result, Toast.LENGTH_LONG).show();
     }
 }

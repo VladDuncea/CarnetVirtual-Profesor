@@ -100,7 +100,6 @@ public class LoginActivity extends Activity
         mEmail = mEmailView.getText().toString();
         mPassword = mPasswordView.getText().toString();
 
-        //TODO: DUNCEA PLS CHANGE THIS
         Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
     }
 }

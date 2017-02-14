@@ -12,10 +12,10 @@ import java.util.Map;
  */
 
 public class _Grade_Upload extends StringRequest{
-    private static final String Site_URL_Login = "http://carnet-virtual.victoriacentre.ro/presence_upload_prof.php";
+    private static final String Site_URL_Login = "http://carnet-virtual.victoriacentre.ro/grade_upload_prof.php";
     private Map<String, String> params;
 
-    public _Grade_Upload(String STID, String GValue,String TID,String SBName,String GDate,String GSemester,Response.Listener<String> listener) {
+    public _Grade_Upload(String STID, String GValue,String TID,String SBName,String GDate,String CValue,String GSemester,Response.Listener<String> listener) {
         super(Request.Method.POST, Site_URL_Login, listener, null);
         String AccessCode = "565656";
         params = new HashMap<>();
@@ -25,6 +25,7 @@ public class _Grade_Upload extends StringRequest{
         params.put("GValue",GValue);
         params.put("SBName",SBName);
         params.put("GDate",GDate);
+        params.put("CValue",CValue);
         params.put("GSemester",GSemester);
 
     }
