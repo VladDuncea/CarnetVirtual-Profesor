@@ -5,22 +5,22 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1720084216471517"
+    timestamp="1722730907692712"
     token="-7884741472932783606"
-    verifier="FIELD_TYPE_CHANGE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="390" />
+        duration="447" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="12" />
+        duration="58" />
     <task
         name="verifier"
-        duration="4" />
+        duration="3" />
 
     <artifact
         location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
@@ -34,8 +34,8 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="1720084216471517"
-        verifier="FIELD_TYPE_CHANGE" >
+        timestamp="1722730907692712"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Downloads\CarnetVirtual-Profesor\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />

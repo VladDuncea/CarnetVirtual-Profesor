@@ -59,6 +59,7 @@ public class MessageActivity extends AppCompatActivity {
                     if(success){
 
                         Toast.makeText(MessageActivity.this,"Mesaj trimis.",Toast.LENGTH_LONG).show();
+
                     }
                     else{
                         AlertDialog.Builder alert = new AlertDialog.Builder(MessageActivity.this);
