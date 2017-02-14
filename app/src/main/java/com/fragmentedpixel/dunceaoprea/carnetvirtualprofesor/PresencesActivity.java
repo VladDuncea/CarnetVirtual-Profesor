@@ -1,6 +1,8 @@
 package com.fragmentedpixel.dunceaoprea.carnetvirtualprofesor;
 
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -8,6 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -52,10 +61,44 @@ public class PresencesActivity extends AppCompatActivity {
         studentsList.setAdapter(adapter);
     }
 
-    private void Presence(int STID)
+    private void Presence(Integer STID)
     {
         Date date = Calendar.getInstance().getTime();
-        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YY", Locale.getDefault());
+        SimpleDateFormat df = new SimpleDateFormat("YYYY/MM/dd HH:mm", Locale.getDefault());
+
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+                    if(!jsonResponse.getBoolean("success"))
+                    {
+                        AlertDialog.Builder alert = new AlertDialog.Builder(PresencesActivity.this);
+                        alert.setMessage("Maintenance").setNegativeButton("Inapoi",null).create().show();
+                    }
+                    boolean success = jsonResponse.getBoolean("success");
+                    if(success){
+
+                        Toast.makeText(PresencesActivity.this,"Succes",Toast.LENGTH_LONG).show();
+
+                    }
+                    else{
+                        AlertDialog.Builder alert = new AlertDialog.Builder(PresencesActivity.this);
+                        alert.setMessage("Eroare").setNegativeButton("Inapoi",null).create().show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        String CValue = Teacher.teacher.selectedClass.CValue.toString();
+        String TID = Teacher.teacher.TID;
+        String SBName = Teacher.teacher.selectedClass.subjects.get(0); //TODO Materie selectata
+
+        _Presence_Upload presence_Request = new _Presence_Upload(STID.toString(),CValue,TID,SBName,df.format(date),responseListener);
+        RequestQueue presence_Queue = Volley.newRequestQueue(PresencesActivity.this);
+        presence_Queue.add(presence_Request);
 
         Toast.makeText(PresencesActivity.this, "Absenta la index: " + STID + " la data: " + df.format(date), Toast.LENGTH_LONG).show();
     }
