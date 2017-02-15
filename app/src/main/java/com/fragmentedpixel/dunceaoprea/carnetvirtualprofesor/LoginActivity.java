@@ -54,6 +54,10 @@ public class LoginActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        Serialization.readSerializable(getApplicationContext());
+        if(Serialization.serialization != null)
+            ProgressBar();
+
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -86,7 +90,11 @@ public class LoginActivity extends Activity
             @Override
             public void run()
             {
+                if(Serialization.serialization == null)
                     LogIn();
+                else
+                    Refresh.LogIn(LoginActivity.this,Serialization.serialization.email,Serialization.serialization.password);
+
                     progressDialog.dismiss();
 
             }
@@ -99,6 +107,8 @@ public class LoginActivity extends Activity
         mPasswordView = (EditText) findViewById(R.id.password);
         mEmail = mEmailView.getText().toString();
         mPassword = mPasswordView.getText().toString();
+
+        new Serialization(mEmail, mPassword);
 
         Refresh.LogIn(LoginActivity.this,mEmail,mPassword);
     }

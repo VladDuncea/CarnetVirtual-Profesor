@@ -64,9 +64,8 @@ public class Refresh {
                             String TFirstName = jsonResponse.getString("TFirstName");
                             Boolean TIsMaster = jsonResponse.getBoolean("TIsMaster");
 
-                            //new Student(SName,SAddress,SPhone,CName,STName,STFirstName,STPicture_bm,Email,Password, BSignature_bm,STSerialNr,STAddress,STPhone);
-                            //Serialization.saveSerializable(context);
-                            //context.startActivity(new Intent(context, Main.class));
+                            Serialization.saveSerializable(context);
+
                             ArrayList<Classes> teacherClasses = new ArrayList<>();
                             for(int i=0;i<NRClasses;i++)
                             {
@@ -98,7 +97,6 @@ public class Refresh {
                                 teacherClasses.add(new Classes(CID,CValue,CName,classesSubject,teacherStudent));
                             }
                             new Teacher(TID,TName,TFirstName,TIsMaster,teacherClasses);
-
                             context.startActivity(new Intent(context, MainActivity.class));
 
                         }
