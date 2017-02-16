@@ -15,6 +15,8 @@ import java.awt.font.TextAttribute;
 import java.sql.BatchUpdateException;
 import java.util.ArrayList;
 
+import javax.security.auth.Subject;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        PopulateList();
+        PopulateListClasses();
+        PopulateListSubjects();
         LinkButtons();
     }
 
@@ -68,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void PopulateList()
+    private void PopulateListClasses()
     {
-
+        Teacher.teacher.selectedClass = Teacher.teacher.classes.get(0);
         final Spinner classesSpinner = (Spinner) findViewById(R.id.classes_spinner);
 
         ArrayList<String> arraySpinner = new ArrayList<>();
@@ -94,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 if(c.CName.equals(selectedClassName))
                     Teacher.teacher.selectedClass = c;
 
+            PopulateListSubjects();
+
         }
 
         @Override
@@ -102,5 +107,39 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Please select a class", Toast.LENGTH_SHORT).show();
         }
     });
+    }
+
+    private void PopulateListSubjects()
+    {
+        Teacher.teacher.selectedSubject = Teacher.teacher.selectedClass.subjects.get(0);
+        final Spinner subjectsSpinner = (Spinner) findViewById(R.id.materii_spinner);
+
+        ArrayList<String> arraySpinner = new ArrayList<>();
+        ArrayList<String> subjectsList = new ArrayList<>();
+
+        for(String materie: Teacher.teacher.selectedClass.subjects)
+            subjectsList.add(materie);
+
+        for (String c : subjectsList)
+            arraySpinner.add(c);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, arraySpinner);
+        subjectsSpinner.setAdapter(adapter);
+
+        subjectsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+            {
+                String selectedClassName = subjectsSpinner.getSelectedItem().toString();
+                Teacher.teacher.selectedSubject = selectedClassName;
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent)
+            {
+                Toast.makeText(MainActivity.this, "Please select a class", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

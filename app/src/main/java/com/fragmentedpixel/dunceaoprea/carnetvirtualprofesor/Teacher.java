@@ -12,6 +12,8 @@ public class Teacher
     public ArrayList<Classes> classes = new ArrayList<>();
 
     public Classes selectedClass;
+    public String selectedSubject;
+
     public String TID;
     public String Name;
     public String FirstName;
